@@ -23,13 +23,13 @@ export class ListadoCitasComponent implements OnInit {
   getAllBooking(){
     this.booking.findAllBooking().subscribe(async booking =>{
       this.allBooking = booking;
-    })
+    });
   }
 
   getAllUsers(){
     this.users.findAllUser().subscribe(async users => {
       this.allUser = users;
-    })
+    });
   }
 
 }

@@ -33,6 +33,7 @@ ol{
 
 main{
     margin: 50px;
+    height: 71vh;
 }
 
 ol > li{
@@ -62,8 +63,8 @@ button{
 
 footer{
     background-color: #1CBD9B;
-    position: fixed;
-    width: 100%;
+    position: relative;
+    width: auto;
     bottom: 0;
     padding: 20px;
     text-align: center;

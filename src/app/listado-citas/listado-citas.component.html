@@ -7,7 +7,7 @@
                 <p><strong>Apellido:</strong> {{user.lastName}}</p>
                 <p><strong>Telefono:</strong> {{user.phone}}</p>
             </div>
-            <span><strong>Fecha y hora de las citas:</strong> </span>
+            <span><strong>Fecha y hora de las reservas:</strong> </span>
             <div class="bookingInfo">
                 <div *ngFor="let booking of allBooking" >
                     <ng-container *ngIf="user.id == booking.userId">
