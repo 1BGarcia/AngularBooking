@@ -1,1 +1,20 @@
-<p>listado-citas works!</p>
+<div class="listado-container">
+    <div>
+        <p class="titulo">Listado de reservas</p>
+        <div *ngFor="let user of allUser" class="infoData">
+            <div class="userInfo">
+                <p><strong>Nombre:</strong> {{user.firstName}}</p>
+                <p><strong>Apellido:</strong> {{user.lastName}}</p>
+                <p><strong>Telefono:</strong> {{user.phone}}</p>
+            </div>
+            <span><strong>Fecha y hora de las citas:</strong> </span>
+            <div class="bookingInfo">
+                <div *ngFor="let booking of allBooking" >
+                    <ng-container *ngIf="user.id == booking.userId">
+                        <p>{{booking.bookingDate}}</p>
+                    </ng-container> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

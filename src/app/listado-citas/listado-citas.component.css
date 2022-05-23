@@ -1,0 +1,31 @@
+.listado-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.listado-container > div{
+    width: 40%;
+    padding: 50px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.infoData{
+    padding: 5px;
+    margin: 10px;
+}
+
+.userInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookingInfo{
+    padding: 20px;
+}
