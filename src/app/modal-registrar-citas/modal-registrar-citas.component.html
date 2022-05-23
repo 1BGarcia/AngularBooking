@@ -1,0 +1,28 @@
+<div id="modal-content-wrapper">
+    <div id="modal-header">
+        <h1 class="modal-title">Fecha y Hora</h1>
+    </div>
+    <div class="content-modal">
+        <div>
+            <form [formGroup]="bookingData" (ngSubmit)="submitBooking()">
+                <p>
+                    <span>Telefono del usuario</span>
+                    <input type="number" name="telefono" id="telefono" formControlName="phone">
+                </p>
+                <p>
+                    <span>Fecha seleccionada</span>
+                    <input type="date" name="fecha" id="fecha" formControlName="fecha">
+                </p>
+                <p>
+                    <span>Hora de inicio</span>
+                    <input type="time" id="startHour" name="startHour" min="09:00" max="18:00" formControlName="hora" required>
+                </p>
+                <button type="submit">Crear reserva</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Registro de usuarios -->
+<!--  -->
+<!--  -->
+<!--  -->

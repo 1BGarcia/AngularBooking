@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+}
+
+header{
+    background-color: #1CBD9B;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+header > ul > li{
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+header > ul > li:hover{
+    background-color: #1EDFB7;
+    cursor: pointer;
+}
+
+ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+
+main{
+    margin: 50px;
+}
+
+ol > li{
+    padding: 20px;
+}
+
+.days-numbers:hover{
+    background-color: antiquewhite;
+}
+
+.day-name{
+    background-color: #eee;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-calendar{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    border: none;
+    background:none;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #1CBD9B;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer > span{
+    color: white;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

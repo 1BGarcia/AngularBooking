@@ -1,0 +1,24 @@
+<div id="modal-content-wrapper">
+    <div id="modal-header">
+        <h1 class="modal-title">Crear cita previa</h1>
+    </div>
+    <div class="content-modal">
+        <form [formGroup]="userData" (ngSubmit)="signupUsers()">
+            <p>
+                <span>Introduce tu nombre</span>
+                <input type="text" name="nombre" id="nombre" formControlName="firstName">
+            </p>
+            <p>
+                <span>Introduce el apellido</span>
+                <input type="text" name="apellido" id="apellido" formControlName="lastName">
+            </p>
+            <p>
+                <span>Introduce un numero de telefono</span>
+                <input type="number" name="telefono" id="telefono" formControlName="phone">
+            </p>
+            <div class="buttons">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
